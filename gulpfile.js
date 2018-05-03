@@ -6,8 +6,10 @@ var minifyFiles = [
 ];
 
 gulp.task('minify', function() {
-    gulp.src(minifyFiles)
-        .pipe(minify())
+    gulp.src('jquery.pajinate.js')
+        .pipe(minify({
+            ext:{ src:'.min.js' }
+        }))
         .pipe(gulp.dest('./'));
 });
 
