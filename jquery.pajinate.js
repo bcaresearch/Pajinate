@@ -141,7 +141,7 @@
             /* Bind the actions to their respective links */
 
             // Event handler for 'First' link
-            $page_container.find('.first_link').click(function(e) {
+            $page_container.find('.first_link').on('click', function(e) {
                 e.preventDefault();
 
                 movePageNumbersRight($(this), 0);
@@ -149,7 +149,7 @@
             });
 
             // Event handler for 'Last' link
-            $page_container.find('.last_link').click(function(e) {
+            $page_container.find('.last_link').on('click', function(e) {
                 e.preventDefault();
                 var lastPage = total_page_no_links - 1;
                 movePageNumbersLeft($(this), lastPage);
@@ -157,20 +157,20 @@
             });
 
             // Event handler for 'Prev' link
-            $page_container.find('.previous_link').click(function(e) {
+            $page_container.find('.previous_link').on('click', function(e) {
                 e.preventDefault();
                 showPrevPage($(this));
             });
 
 
             // Event handler for 'Next' link
-            $page_container.find('.next_link').click(function(e) {
+            $page_container.find('.next_link').on('click', function(e) {
                 e.preventDefault();
                 showNextPage($(this));
             });
 
             // Event handler for each 'Page' link
-            $page_container.find('.page_link').click(function(e) {
+            $page_container.find('.page_link').on('click', function(e) {
                 e.preventDefault();
                 gotopage($(this).attr('longdesc'));
             });
