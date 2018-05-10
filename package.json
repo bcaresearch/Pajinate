@@ -1,0 +1,14 @@
+{
+  "name": "pajinate",
+  "version": "1.0.0",
+  "description": "Pajinate - jQuery Pagination Plugin",
+  "main": "jquery.pajinate.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreal/Pajinate.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "^2.1.0"
+  }
+}
