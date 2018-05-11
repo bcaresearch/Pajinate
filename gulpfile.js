@@ -8,7 +8,7 @@ var minifyFiles = [
 gulp.task('minify', function() {
     gulp.src('jquery.pajinate.js')
         .pipe(minify({
-            ext:{ src:'.min.js' }
+            ext:{ min:'.min.js' }
         }))
         .pipe(gulp.dest('./'));
 });
